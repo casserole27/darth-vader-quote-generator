@@ -39,13 +39,17 @@ https://coolors.co
 /******* GLOBAL STYLES *******/
 
 
+main {
+    display: grid;
+}
+
 .chest-plate {
-    max-width: 600px;
-    height: 600px;
+    max-width: 700px;
+    height: 700px;
     background-color: black;
     margin: 4rem auto;
     border: 50px solid black;
-    border-top-style: inset black;
+    border-top-style: inset;
     border-right-style: inset;
     border-left-style: outset;
     border-bottom-style: outset;
@@ -64,3 +68,85 @@ https://coolors.co
 /* 3D BORDER STYLES
 groove, ridge, inset, outset
 */
+
+button {
+    border: .25px solid rgb(48, 48, 48);
+}
+
+/****** RED 3D BUTTONS ******/
+
+.three-d-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    margin: 1rem;
+    border: 10px solid gray;
+    border-style: inset;
+}
+
+/****** GLOWING BUTTONS ******/
+
+.glowing-buttons {
+    margin: 1rem;
+}
+
+.green-btn {
+    width: 100px;
+    height: 80px;
+    background-color: greenyellow;
+
+}
+
+.red-btn {
+    width: 100px;
+    height: 80px;
+    background-color: red;
+}
+
+/****** SWITCHES ******/
+
+
+.switches {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.red-switch {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.switch-top-red, .switch-bottom-red {
+    width: 75px;
+    height: 100px;
+    background-color: red;
+}
+
+.gray-switches {
+    /* margin: 1rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.switch-top {
+    margin: 0 1rem;
+    width: 75px;
+    height: 100px;
+    background-color: gray;
+}
+
+.switch-bottom {
+    margin: 0 1rem;
+    width: 75px;
+    height: 100px;
+    background-color: lightgray;
+}
+
