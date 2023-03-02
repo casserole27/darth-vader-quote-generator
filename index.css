@@ -44,6 +44,10 @@ https://coolors.co
 
 /******* GLOBAL STYLES *******/
 
+body {
+    background-color: black;
+}
+
 
 main {
     display: grid;
