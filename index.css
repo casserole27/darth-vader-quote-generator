@@ -14,6 +14,7 @@ https://coolors.co
 :root {
     
     /*COLORS*/
+    --true-black: black;
     --black: rgb(32, 32, 32);
     --dark-gray: rgb(54, 54, 54);
     --gray: gray;
@@ -21,7 +22,10 @@ https://coolors.co
     --red: red;
     --green: green;
   
+    /* BORDERS */
     
+    --basic-border: 1px solid var(--true-black);
+
     /*BORDER RADIUS*/
     --br-soft: 1rem;
     --br-round: 50%;
@@ -58,11 +62,13 @@ main {
     height: 700px;
     background-color: var(--black);
     margin: 4rem auto;
-    border: 50px solid var(--black);
-    border-top-style: inset;
-    border-right-style: inset;
-    border-left-style: outset;
-    border-bottom-style: outset;
+    padding: 2rem;
+    outline: 50px inset var(--black);
+    border: 1px solid black;
+    /* outline-style: inset; */
+    /* outline-right-style: inset; */
+    /* outline-left-style: outset; */
+    /* outline-bottom-style: outset; */
 }
 
 /* .chest-plate:first-child:before {
