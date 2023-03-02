@@ -93,6 +93,8 @@ Check markup and accessibility
 
 [Scrimba help](https://projects.scrimba.com/inspirational-quote-page)
 
+[CSS outline property](https://www.w3schools.com/css/css_outline.asp)
+
 ## Author
 
 - Website - [C Lewis](https://www.clewisdev.com)

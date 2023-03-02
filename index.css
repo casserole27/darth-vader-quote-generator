@@ -14,6 +14,12 @@ https://coolors.co
 :root {
     
     /*COLORS*/
+    --black: rgb(32, 32, 32);
+    --dark-gray: rgb(54, 54, 54);
+    --gray: gray;
+    --light-gray: rgb(167, 164, 164);
+    --red: red;
+    --green: green;
   
     
     /*BORDER RADIUS*/
@@ -46,9 +52,9 @@ main {
 .chest-plate {
     max-width: 700px;
     height: 700px;
-    background-color: black;
+    background-color: var(--black);
     margin: 4rem auto;
-    border: 50px solid black;
+    border: 50px solid var(--black);
     border-top-style: inset;
     border-right-style: inset;
     border-left-style: outset;
@@ -70,7 +76,7 @@ groove, ridge, inset, outset
 */
 
 button {
-    border: .25px solid rgb(48, 48, 48);
+    border: .25px solid var(--dark-gray);
 }
 
 /****** RED 3D BUTTONS ******/
@@ -83,10 +89,11 @@ button {
 .btn {
     width: 150px;
     height: 50px;
-    background-color: red;
+    background-color: var(--red);
+    outline: 10px inset var(--gray);
     margin: 1rem;
-    border: 10px solid gray;
-    border-style: inset;
+    border: 10px solid var(--light-gray);
+    /* border-style: inset; */
 }
 
 /****** GLOWING BUTTONS ******/
@@ -98,14 +105,20 @@ button {
 .green-btn {
     width: 100px;
     height: 80px;
-    background-color: greenyellow;
+    margin: 1rem;
+    background-color: var(--green);
+    border: 2px solid var(--black);
+    outline: 5px solid var(--dark-gray);
 
 }
 
 .red-btn {
     width: 100px;
     height: 80px;
-    background-color: red;
+    margin: 1rem;
+    background-color: var(--red);
+    border: 2px solid var(--black);
+    outline: 5px solid var(--dark-gray);
 }
 
 /****** SWITCHES ******/
@@ -127,7 +140,7 @@ button {
 .switch-top-red, .switch-bottom-red {
     width: 75px;
     height: 100px;
-    background-color: red;
+    background-color: var(--red);
 }
 
 .gray-switches {
@@ -140,13 +153,13 @@ button {
     margin: 0 1rem;
     width: 75px;
     height: 100px;
-    background-color: gray;
+    background-color: var(--gray);
 }
 
 .switch-bottom {
     margin: 0 1rem;
     width: 75px;
     height: 100px;
-    background-color: lightgray;
+    background-color: var(--light-gray);
 }
 
