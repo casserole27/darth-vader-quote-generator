@@ -60,16 +60,22 @@ main {
 .chest-plate {
     max-width: 700px;
     height: 700px;
-    background-color: var(--black);
+    background: linear-gradient(210deg,#333333, #141414 30%, #000000 50%, #222222);
     margin: 4rem auto;
-    padding: 2rem;
-    outline: 50px inset var(--black);
-    border: 1px solid black;
-    /* outline-style: inset; */
-    /* outline-right-style: inset; */
-    /* outline-left-style: outset; */
-    /* outline-bottom-style: outset; */
+    padding: 4rem;
+    border-image: linear-gradient(210deg, #141414, #141414, #000000) 30% / 50px;
+    outline: 1px solid var(--black);
+    /* box-shadow: -2px 2px rgb(11, 7, 44); */
+
+
+/*? https://developer.mozilla.org/en-US/docs/Web/CSS/border-image */    
 }
+
+/* .chest-plate::before {
+    content:'';
+    clip-path: border-box;
+    background-color: red;
+} */
 
 /* .chest-plate:first-child:before {
     content:'';
