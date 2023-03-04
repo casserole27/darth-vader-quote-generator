@@ -72,11 +72,11 @@ const quotes = [
 
 ]
 
-// const quotes = ["You don't know the power of the dark side.", "You are unwise to lower your defenses!", "No...I am your father."]
-
 const chestPlate = document.getElementById("chest-plate")
 
 const quoteText = document.getElementById("quote-text");
+const mediaText = document.getElementById("media-text");
+
 
 /****** FUNCTIONS ******/
 
@@ -88,6 +88,7 @@ function showQuote () {
         let randomQuote = Math.floor(Math.random() * text.length);
 
         quoteText.innerText = text[randomQuote].quote;
+        mediaText.innerText = text[randomQuote].media;
     };
  
 };

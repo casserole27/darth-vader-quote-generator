@@ -7,11 +7,11 @@
     
     <title>Quote Generator</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <!-- 
@@ -24,44 +24,74 @@
     <main>
 
         <div class="chest-plate" id="chest-plate">
+            
+            <div class="tubes-left"></div>
+
+            <section class="three-d-buttons">    
+                
+                <div class="btn-wrapper">
+                    <button class="btn"></button>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="btn"></button>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="btn"></button>
+                </div>
+            
+            </section> 
+            
+            <section class="glowing-buttons">
+            
+                <button class="green-btn"></button>
+                <button class="red-btn"></button>
+            
+            </section> 
+            
+            <section class="switches">
+                
+                <div class="switch">  
+                    <div class="red-top-accent"></div>
+                    <button class="switch-top-red"></button>
+                    <button class="switch-bottom-red"><div class="highlight"></div></button>
+                    <div class="red-bottom-accent"></div>
     
-        <section class="three-d-buttons">    
-        <button class="btn"></button>
-        <button class="btn"></button>
-        <button class="btn"></button>
-        </section> 
-        
-        <section class="glowing-buttons">
-        <button class="green-btn" id="green-glow-btn"></button>
-        <button class="red-btn"></button>
-        </section> 
-        
-        <section class="switches">
-            <div class="red-switch">  
-                <button class="switch-top-red"></button>
-                <button class="switch-bottom-red"></button>
-            </div>
-
-            <div class="gray-switches">
-                <div class="gray-switches-top">
-                    <button class="switch-top"></button>
-                    <button class="switch-top"></button>                
-                    <button class="switch-top"></button>
                 </div>
 
-                <div class="gray-switches-bottom">
-                    <button class="switch-bottom"></button>
-                    <button class="switch-bottom"></button>
-                    <button class="switch-bottom"></button>   
+                <div class="switch">  
+                    <div class="gray-top-accent"></div>
+                    <button class="switch-top-gray"></button>
+                    <button class="switch-bottom-gray"></button>
+                    <div class="gray-bottom-accent"></div>
+    
                 </div>
-            </div>
 
-        </section>
-        
+                <div class="switch">  
+                    <div class="gray-top-accent"></div>
+                    <button class="switch-top-gray"></button>
+                    <button class="switch-bottom-gray"></button>
+                    <div class="gray-bottom-accent"></div>
+    
+                </div>
+                
+                <div class="switch">  
+                    <div class="gray-top-accent"></div>
+                    <button class="switch-top-gray"></button>
+                    <button class="switch-bottom-gray"></button>
+                    <div class="gray-bottom-accent"></div>
+                </div>
+                
+            </section>
+
+            <div class="tubes-right"></div>
+
         </div>
 
         <section>
             <p class="text" id="quote-text"></p>
+            <p class="text" id="media-text"></p>
         </section>
 
     </main>   
