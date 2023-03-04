@@ -1,22 +1,106 @@
+/****** VARIABLES ******/
+
 const quotes = [
     {
-        quote: "Today is your opportunity to build the tomorrow you want.",
-        author: "Ken Poirot"
+        quote: "If you're not with me, then you're my enemy!",
+        media: "Star Wars Episode III"
     },
     {
-        quote: "When you have a dream, you've got to grab it and never let go.",
-        author: "Carol Burnett"
+        quote: "Anakin Skywalker was weak. I destroyed him.",
+        media: "Star Wars Rebels"
     },
+
     {
-        quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-        author: "Winston Churchill"
+        quote: "I am what you made me.",
+        media: "Star Wars Obi-Wan Kenobi"
     },
+
     {
-        quote: "You define your own life. Don't let other people write your script.",
-        author: "Oprah Winfrey"
+        quote: "Your strength has returned, but the weakness still remains.",
+        media: "Star Wars Obi-Wan Kenobi"
     },
+
     {
-        quote: "Someone once told me to never dream. I said NEVER SAY NEVER",
-        author: "Justin Bieber"
-    }
+        quote: "Anakin Skywalker was weak. I destroyed him.",
+        media: "Star Wars Rebels"
+    },
+
+    {
+        quote: "Be careful not to choke on your aspirations.",
+        media: "Rogue One: A Star Wars Story"
+    },
+
+    {
+        quote: "I find your lack of faith disturbing.",
+        media: "Star Wars Episode IV"
+    },
+
+    {
+        quote: "When I left you, I was but the learner. Now, I am the master.",
+        media: "Star Wars Episode IV"
+    },
+
+    {
+        quote: "I am altering the deal. Pray I don't alter it any further.",
+        media: "Star Wars Episode V"
+    },
+
+    {
+        quote: "There is no escape. Don't make me destroy you.",
+        media: "Star Wars Episode V"
+    },
+
+    {
+        quote: "No...I am your father.",
+        media: "Star Wars Episode V"
+    },
+
+    {
+        quote: "You may dispense with the pleasantries. I'm here to put you back on schedule.",
+        media: "Star Wars Episode VI"
+    },
+
+    {
+        quote: "You don't know the power of the dark side.",
+        media: "Star Wars Episode VI"
+    },
+
+    {
+        quote: "You are unwise to lower your defenses!",
+        media: "Star Wars Episode VI"
+    },
+
 ]
+
+// const quotes = ["You don't know the power of the dark side.", "You are unwise to lower your defenses!", "No...I am your father."]
+
+const chestPlate = document.getElementById("chest-plate")
+
+const quoteText = document.getElementById("quote-text");
+
+/****** FUNCTIONS ******/
+
+function showQuote () {
+
+    let text = quotes;
+
+    for (let i = 0; i < quotes.length; i++) {
+        let randomQuote = Math.floor(Math.random() * text.length);
+
+        quoteText.innerText = text[randomQuote].quote;
+    };
+ 
+};
+
+function targetButtons(e) {
+    
+    if(e.target.tagName === 'BUTTON') {
+        showQuote();
+    };
+};
+
+
+/****** EVENT LISTENERS *******/
+
+chestPlate.addEventListener("click", targetButtons);
+
