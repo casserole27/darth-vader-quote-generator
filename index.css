@@ -87,7 +87,6 @@ p {
 /****** RED 3D BUTTONS ******/
 
 .three-d-buttons {
-    /* margin-top: 3rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +103,9 @@ p {
     margin: auto;
     border: var(--basic-border);
     outline: 10px solid var(--gray);
+
+    transition: box-shadow 1s ease-in;
+
 }
 
 .btn-wrapper {
@@ -113,6 +115,17 @@ p {
     outline: 3px solid var(--gray);
 
 }
+
+.btn:hover, .btn:focus {
+    background: radial-gradient(rgb(252, 230, 230), red 50%);
+    box-shadow: 0 0 40px 20px red; 
+}
+
+.btn:active {
+  transform: scale(.95);
+}
+
+
 
 /****** GLOWING BUTTONS ******/
 
@@ -133,7 +146,14 @@ p {
     /* background-color: var(--green); */
     border: 2px solid var(--black);
     outline: 5px solid var(--dark-gray);
+    
+    transition: box-shadow 1s ease-in;
 
+}
+
+.green-btn:hover, .green-btn:focus {
+    background: radial-gradient(rgb(230, 252, 236), green 50%);
+    box-shadow: 0 0 100px 30px green;
 }
 
 .red-btn {
@@ -146,6 +166,17 @@ p {
     0 0 60px 30px #fff,
     0 0 100px 60px #f0f,
     0 0 140px 90px #0ff; */
+    
+    transition: box-shadow 1s ease-in;
+}
+
+.red-btn:hover, .red-btn:focus {
+    background: radial-gradient(rgb(252, 230, 230), red 50%);
+    box-shadow: 0 0 100px 30px red;
+}
+
+.red-btn:active, .green-btn:active {
+    transform: scale(.90);
 }
 
 /****** SWITCHES ******/
@@ -202,6 +233,18 @@ p {
     display: flex;
     justify-content: end;
 }
+
+/* :active {
+    
+    .red-top-accent {
+        height: 30px;
+    }
+
+    .red-bottom-accent {
+        height: 10px;
+        
+    }
+} */
 
 .highlight {
     width: 50px;
