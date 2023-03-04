@@ -77,6 +77,13 @@ const chestPlate = document.getElementById("chest-plate")
 const quoteText = document.getElementById("quote-text");
 const mediaText = document.getElementById("media-text");
 
+/****** RED SWITCH ******/
+
+const redTopAcc = document.getElementById("red-top-accent")
+const redBotAcc = document.getElementById("red-bottom-accent")
+const switchTopRed = document.getElementById("switch-top-red")
+const switchBotRed = document.getElementById("switch-bottom-red")
+
 
 /****** FUNCTIONS ******/
 
@@ -100,8 +107,20 @@ function targetButtons(e) {
     };
 };
 
+function switchOn () {
+
+    redTopAcc.style.height = "30px"
+    redBotAcc.style.height = "10px"
+};
+
+function switchOff () {
+    redTopAcc.style.height = "10px";
+    redBotAcc.style.height = "30px";
+}
+
 
 /****** EVENT LISTENERS *******/
 
 chestPlate.addEventListener("click", targetButtons);
-
+switchTopRed.addEventListener("click", switchOff);
+switchBotRed.addEventListener("click", switchOn);
