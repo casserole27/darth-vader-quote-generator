@@ -71,28 +71,14 @@ main {
 /*? https://developer.mozilla.org/en-US/docs/Web/CSS/border-image */    
 }
 
-/* .chest-plate::before {
-    content:'';
-    clip-path: border-box;
-    background-color: red;
-} */
-
-/* .chest-plate:first-child:before {
-    content:'';
-    position:absolute;
-    width:100%;
-    height:30px;
-    background:linear-gradient(red, green);
-    top:-30px;
-    left:0;
-} */
-
-/* 3D BORDER STYLES
-groove, ridge, inset, outset
-*/
-
 button {
     border: .25px solid var(--dark-gray);
+}
+
+p {
+    font-size: 2rem;
+    text-align: center;
+    color: whitesmoke;
 }
 
 /****** RED 3D BUTTONS ******/
