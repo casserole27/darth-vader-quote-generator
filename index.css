@@ -261,7 +261,7 @@ button {
         red 70%);
 }
 
-.highlight {
+.highlight-red {
     width: 55px;
     height: 5px;
     background-color: var(--light-red); 
@@ -318,6 +318,20 @@ button {
             rgb(95, 95, 95));
 
     border-bottom: 2rem solid var(--dark-gray);
+
+    display: flex;
+    justify-content: end;
+}
+
+
+.highlight-gray {
+    width: 55px;
+    height: 5px;
+    background-color: var(--light-gray); 
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: .3rem;
+    border-radius: .5rem;
 }
 
 /****** GRAY SWITCH TOGGLE CLASSES ******/
