@@ -210,7 +210,7 @@ button {
     height: 225px;
     display: flex;
     flex-direction: column;
-    outline: 5px solid var(--dark-gray);
+    outline: 5px solid var(--black);
 
 }
 
@@ -221,7 +221,9 @@ button {
     width: 70px;
     height: 90px;
     border-radius: 1px;
-    
+
+    transition: box-shadow 1s ease-in;
+
 }
 
 .switch-top-red {
@@ -254,12 +256,22 @@ button {
 .switch-top-red:focus,
 .switch-bottom-red:focus {
     background: 
-    radial-gradient(
-        rgb(252, 230, 230), 
-        red 60%);
+        radial-gradient(
+        rgb(252, 163, 163), 
+        red 70%);
 }
 
-/****** ACTIVE CLASSES RED SWITCH ******/
+.highlight {
+    width: 55px;
+    height: 5px;
+    background-color: var(--light-red); 
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: .3rem;
+    border-radius: .5rem;
+}
+
+/****** RED SWITCH TOGGLE CLASSES ******/
 
 .red-switch-on-top {
     border-top: 2rem solid var(--med-dark-red);
@@ -270,35 +282,17 @@ button {
 }
 
 
-
-/* .highlight {
-    width: 55px;
-    height: 30px;
-    background: linear-gradient(to left, rgb(192, 192, 192), rgb(255, 140, 140));
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: .2rem;
-    border-radius: .5rem;
-    opacity: .20;
-} */
-
 /****** GRAY SWITCHES ******/
 
-.gray-top-accent {
-    background: 
-        linear-gradient(
-            -135deg, 
-            white, 
-            rgb(165, 163, 163), 
-            rgb(95, 95, 95));
+.switch-top-gray, 
+.switch-bottom-gray {
+    box-sizing: content-box;
     width: 70px;
-    height: 10px;
-}
+    height: 90px;
+    border-radius: 1px;
 
-.gray-bottom-accent {
-    background-color: var(--dark-gray);
-    width: 70px;
-    height: 30px;
+    transition: box-shadow 1s ease-in;
+
 }
 
 .switch-top-gray {
@@ -309,7 +303,8 @@ button {
             -135deg, 
             white, 
             rgb(100, 100, 100), 
-            rgb(61, 61, 61))
+            rgb(61, 61, 61));
+    border-top: 1rem solid var(--med-gray);
 }
 
 .switch-bottom-gray {
@@ -321,6 +316,18 @@ button {
             white, 
             rgb(165, 163, 163), 
             rgb(95, 95, 95));
+
+    border-bottom: 2rem solid var(--dark-gray);
+}
+
+/****** GRAY SWITCH TOGGLE CLASSES ******/
+
+.gray-switch-on-top {
+    border-top: 2rem solid var(--med-gray);
+}
+
+.gray-switch-on-bottom {
+    border-bottom: 1rem solid var(--dark-gray);
 }
 
 
