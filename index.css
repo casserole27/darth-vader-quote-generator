@@ -4,10 +4,6 @@ https://clewisdev.com
 Date: February - March 2023
 */
 
-/*
-COOLORS color palette link
-https://coolors.co
-*/
 
 /****** VARIABLES ******/
 
@@ -22,6 +18,7 @@ https://coolors.co
     --light-gray: rgb(167, 164, 164);
     --light-red: rgb(252, 54, 54);
     --red: red;
+    --med-dark-red: rgb(202, 1, 1);
     --dark-red: rgb(119, 24, 24);
     --green: green;
   
@@ -34,11 +31,8 @@ https://coolors.co
     --br-round: 50%;
     
     /*FONT SIZES*/
-    --fs-xs: 1rem;
-    --fs-s: 1.25rem;
+    --fs-s: 1rem;
     --fs-m: 1.5rem;
-    --fs-l: 2.25rem;
-    --fs-title: 2.5rem;
 }
 
 /****** MARGIN AND PADDING RESET ******/
@@ -60,10 +54,21 @@ body {
 .chest-plate {
     max-width: 700px;
     height: 700px;
-    background: linear-gradient(210deg,#333333, #141414 30%, #000000 50%);
+    background: 
+        linear-gradient(
+            210deg,
+            #333333, 
+            #141414 30%, 
+            #000000 50%);
     margin: 4rem auto 1rem auto;
     padding: 3rem;
-    border-image: linear-gradient(210deg, #141414, #141414, #000000) 30% / 50px;
+    border-image: 
+        linear-gradient(
+            210deg, 
+            #141414, 
+            #141414, 
+            #000000) 
+            30% / 50px;
     outline: 1px solid var(--black);
 
     display: grid;
@@ -91,7 +96,11 @@ button {
     display: block;
     width: 125px;
     height: 20px;
-    background: radial-gradient(rgb(252, 177, 177), red, rgb(32, 32, 32));
+    background: 
+        radial-gradient(
+            rgb(252, 177, 177), 
+            red, 
+            rgb(32, 32, 32));
     margin: auto;
     border: var(--basic-border);
     outline: 10px solid var(--gray);
@@ -108,15 +117,15 @@ button {
 
 }
 
-.btn:hover, .btn:focus {
+.btn:hover, 
+.btn:focus {
     background: radial-gradient(rgb(252, 230, 230), red 50%);
     box-shadow: 0 0 40px 20px red; 
 }
 
 .btn:active {
-  transform: scale(.95);
+    transform: scale(.95);
 }
-
 
 
 /****** GLOWING BUTTONS ******/
@@ -134,40 +143,51 @@ button {
 .green-btn {
     width: 100px;
     height: 75px;
-    background: radial-gradient(rgb(177, 252, 202), green, rgb(32, 32, 32));
-    /* background-color: var(--green); */
+    background: 
+        radial-gradient(
+            rgb(177, 252, 202), 
+            green, 
+            rgb(32, 32, 32));
     border: 2px solid var(--black);
     outline: 5px solid var(--dark-gray);
     
     transition: box-shadow 1s ease-in;
-
 }
 
-.green-btn:hover, .green-btn:focus {
-    background: radial-gradient(rgb(230, 252, 236), green 50%);
+.green-btn:hover, 
+.green-btn:focus {
+    background: 
+        radial-gradient(
+            rgb(230, 252, 236), 
+            green 50%);
     box-shadow: 0 0 100px 30px green;
 }
 
 .red-btn {
     width: 100px;
     height: 75px;
-    background: radial-gradient(rgb(252, 177, 177), red, rgb(32, 32, 32));
+    background: 
+        radial-gradient(
+            rgb(252, 177, 177), 
+            red, 
+            rgb(32, 32, 32));
     border: 2px solid var(--black);
     outline: 5px solid var(--dark-gray);
-    /* box-shadow:
-    0 0 60px 30px #fff,
-    0 0 100px 60px #f0f,
-    0 0 140px 90px #0ff; */
-    
+     
     transition: box-shadow 1s ease-in;
 }
 
-.red-btn:hover, .red-btn:focus {
-    background: radial-gradient(rgb(252, 230, 230), red 50%);
+.red-btn:hover, 
+.red-btn:focus {
+    background: 
+        radial-gradient(
+            rgb(252, 230, 230), 
+            red 50%);
     box-shadow: 0 0 100px 30px red;
 }
 
-.red-btn:active, .green-btn:active {
+.red-btn:active, 
+.green-btn:active {
     transform: scale(.90);
 }
 
@@ -178,7 +198,6 @@ button {
     margin-top: 2rem;
 
     grid-column: 2 / 4;
-    /* place-content: center; */
 
     display: flex;
     flex-direction: row;
@@ -196,21 +215,25 @@ button {
     background-color: var(--light-red);
     width: 70px;
     height: 10px;
-    background: linear-gradient(-135deg,rgb(248, 125, 125), red, rgb(104, 3, 3));
+    background: 
+        linear-gradient(
+            -135deg,
+            rgb(248, 125, 125), 
+            red, 
+            rgb(104, 3, 3));
     border-radius: 1px;
-
 }
 
 .red-bottom-accent {
     background-color: var(--dark-red);
     width: 70px;
     height: 30px;
-    /* background: linear-gradient(135deg,rgb(248, 125, 125), red, rgb(141, 2, 2)); */
     background: var(--dark-red);
     border-radius: 1px;
 }
 
-.switch-top-red, .switch-bottom-red {
+.switch-top-red, 
+.switch-bottom-red {
     box-sizing: content-box;
     width: 70px;
     height: 90px;
@@ -218,22 +241,50 @@ button {
 }
 
 .switch-top-red {
-    background: linear-gradient(-135deg,rgb(248, 125, 125), red, rgb(104, 3, 3));
-    border-top: 1rem solid rgb(252, 69, 69);
+    background: 
+        linear-gradient(
+            -135deg,
+            rgb(248, 125, 125), 
+            red, 
+            rgb(104, 3, 3));
+    border-top: 1rem solid var(--med-dark-red);
 }
 
 .switch-bottom-red {
-    background: linear-gradient(-135deg,rgb(253, 178, 178), rgb(253, 50, 50), rgb(168, 2, 2));
+    background: 
+        linear-gradient(
+            -135deg,
+            rgb(253, 178, 178), 
+            rgb(253, 50, 50), 
+            rgb(168, 2, 2));
     border-bottom: 2rem solid var(--dark-red);
     display: flex;
     justify-content: end;
 }
 
-.switch-bottom-red:hover, .switch-bottom-red:focus {
-    background: radial-gradient(rgb(252, 177, 177), red);
+.switch-top-red:hover, 
+.switch-top-red:focus,
+.switch-bottom-red:hover, 
+.switch-bottom-red:focus {
+    background: 
+    radial-gradient(
+        rgb(252, 230, 230), 
+        red 60%);
 }
 
-.highlight {
+/****** ACTIVE CLASSES RED SWITCH ******/
+
+.red-switch-on-top {
+    border-top: 2rem solid var(--med-dark-red);
+}
+
+.red-switch-on-bottom {
+    border-bottom: 1rem solid var(--dark-red);
+}
+
+
+
+/* .highlight {
     width: 55px;
     height: 30px;
     background: linear-gradient(to left, rgb(192, 192, 192), rgb(255, 140, 140));
@@ -242,12 +293,17 @@ button {
     margin-left: .2rem;
     border-radius: .5rem;
     opacity: .20;
-}
+} */
 
 /****** GRAY SWITCHES ******/
 
 .gray-top-accent {
-    background: linear-gradient(-135deg, white, rgb(165, 163, 163), rgb(95, 95, 95));
+    background: 
+        linear-gradient(
+            -135deg, 
+            white, 
+            rgb(165, 163, 163), 
+            rgb(95, 95, 95));
     width: 70px;
     height: 10px;
 }
@@ -256,22 +312,30 @@ button {
     background-color: var(--dark-gray);
     width: 70px;
     height: 30px;
-    /* border-top: 2px solid black; */
 }
-
 
 .switch-top-gray {
     width: 70px;
     height: 90px;
-    background: linear-gradient(-135deg, white, rgb(100, 100, 100), rgb(61, 61, 61))
-    /* background-color: var(--med-gray); */
+    background: 
+        linear-gradient(
+            -135deg, 
+            white, 
+            rgb(100, 100, 100), 
+            rgb(61, 61, 61))
 }
 
 .switch-bottom-gray {
     width: 70px;
     height: 90px;
-    background: linear-gradient(-135deg, white, rgb(165, 163, 163), rgb(95, 95, 95));
+    background: 
+        linear-gradient(
+            -135deg, 
+            white, 
+            rgb(165, 163, 163), 
+            rgb(95, 95, 95));
 }
+
 
 /****** TUBES *******/
 
@@ -301,16 +365,16 @@ button {
 /******* TEXT ******/
 
 .text {
-    width: 600px;
-    font-size: 1.5rem;
+    max-width: 600px;
+    font-size: var(--fs-m);
     text-align: center;
     color: goldenrod;
     margin: 0 auto .5rem auto;
 }
 
 .text-two {
-    width: 400px;
-    font-size: 1rem;
+    max-width: 400px;
+    font-size: var(--fs-s);
     text-align: center;
     color: goldenrod;
     margin: 0 auto;

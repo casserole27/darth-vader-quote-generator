@@ -108,8 +108,13 @@ function targetButtons(e) {
 };
 
 
+function redSwitchOnOff() {
+    switchTopRed.classList.toggle('red-switch-on-top')
+    switchBotRed.classList.toggle('red-switch-on-bottom')
+}
+
 /****** EVENT LISTENERS *******/
 
 chestPlate.addEventListener("click", targetButtons);
-switchTopRed.addEventListener("click", switchOff);
-switchBotRed.addEventListener("click", switchOn);
+switchTopRed.addEventListener("click", redSwitchOnOff);
+switchBotRed.addEventListener("click", redSwitchOnOff);
