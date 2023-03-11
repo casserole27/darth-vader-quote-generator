@@ -254,7 +254,9 @@ button {
 }
 
 .switch-top-red:focus,
-.switch-bottom-red:focus {
+.switch-bottom-red:focus,
+.switch-top-red:active,
+.switch-bottom-red:active {
     background: 
         radial-gradient(
         rgb(252, 163, 163), 
@@ -323,6 +325,20 @@ button {
     justify-content: end;
 }
 
+.switch-top-gray:hover,
+.switch-bottom-gray:hover {
+    box-shadow: 0 0 30px 5px silver;
+}
+
+.switch-top-gray:focus,
+.switch-bottom-gray:focus,
+.switch-top-gray:active,
+.switch-bottom-gray:active {
+    background: 
+        radial-gradient(
+        rgb(255, 255, 255), 
+        rgb(145, 144, 144) 70%);
+}
 
 .highlight-gray {
     width: 55px;
