@@ -208,46 +208,40 @@ button {
     /* background: linear-gradient(135deg,rgb(248, 125, 125), red, rgb(141, 2, 2)); */
     background: var(--dark-red);
     border-radius: 1px;
-
 }
 
-
 .switch-top-red, .switch-bottom-red {
+    box-sizing: content-box;
     width: 70px;
     height: 90px;
-    background: linear-gradient(-135deg,rgb(248, 125, 125), red, rgb(104, 3, 3));
     border-radius: 1px;
+}
+
+.switch-top-red {
+    background: linear-gradient(-135deg,rgb(248, 125, 125), red, rgb(104, 3, 3));
+    border-top: 1rem solid rgb(252, 69, 69);
 }
 
 .switch-bottom-red {
     background: linear-gradient(-135deg,rgb(253, 178, 178), rgb(253, 50, 50), rgb(168, 2, 2));
-
+    border-bottom: 2rem solid var(--dark-red);
     display: flex;
     justify-content: end;
 }
 
-/* :active {
-    
-    .red-top-accent {
-        height: 30px;
-    }
-
-    .red-bottom-accent {
-        height: 10px;
-        
-    }
-} */
+.switch-bottom-red:hover, .switch-bottom-red:focus {
+    background: radial-gradient(rgb(252, 177, 177), red);
+}
 
 .highlight {
-    width: 50px;
-    height: 40px;
+    width: 55px;
+    height: 30px;
     background: linear-gradient(to left, rgb(192, 192, 192), rgb(255, 140, 140));
     margin-top: auto;
     margin-right: auto;
     margin-left: .2rem;
-    margin-bottom: auto;
     border-radius: .5rem;
-    opacity: .10;
+    opacity: .20;
 }
 
 /****** GRAY SWITCHES ******/

@@ -107,17 +107,6 @@ function targetButtons(e) {
     };
 };
 
-function switchOn () {
-
-    redTopAcc.style.height = "30px"
-    redBotAcc.style.height = "10px"
-};
-
-function switchOff () {
-    redTopAcc.style.height = "10px";
-    redBotAcc.style.height = "30px";
-}
-
 
 /****** EVENT LISTENERS *******/
 
