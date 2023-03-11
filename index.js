@@ -79,8 +79,6 @@ const mediaText = document.getElementById("media-text");
 
 /****** RED SWITCH ******/
 
-const redTopAcc = document.getElementById("red-top-accent")
-const redBotAcc = document.getElementById("red-bottom-accent")
 const switchTopRed = document.getElementById("switch-top-red")
 const switchBotRed = document.getElementById("switch-bottom-red")
 
@@ -112,6 +110,7 @@ function redSwitchOnOff() {
     switchTopRed.classList.toggle('red-switch-on-top')
     switchBotRed.classList.toggle('red-switch-on-bottom')
 }
+
 
 /****** EVENT LISTENERS *******/
 

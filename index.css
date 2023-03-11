@@ -207,30 +207,13 @@ button {
 }
 
 .switch {
+    height: 225px;
     display: flex;
     flex-direction: column;
+    outline: 5px solid var(--dark-gray);
+
 }
 
-.red-top-accent {
-    background-color: var(--light-red);
-    width: 70px;
-    height: 10px;
-    background: 
-        linear-gradient(
-            -135deg,
-            rgb(248, 125, 125), 
-            red, 
-            rgb(104, 3, 3));
-    border-radius: 1px;
-}
-
-.red-bottom-accent {
-    background-color: var(--dark-red);
-    width: 70px;
-    height: 30px;
-    background: var(--dark-red);
-    border-radius: 1px;
-}
 
 .switch-top-red, 
 .switch-bottom-red {
@@ -238,6 +221,7 @@ button {
     width: 70px;
     height: 90px;
     border-radius: 1px;
+    
 }
 
 .switch-top-red {
@@ -262,9 +246,12 @@ button {
     justify-content: end;
 }
 
-.switch-top-red:hover, 
+.switch-top-red:hover,
+.switch-bottom-red:hover {
+    box-shadow: 0 0 30px 5px red;
+}
+
 .switch-top-red:focus,
-.switch-bottom-red:hover, 
 .switch-bottom-red:focus {
     background: 
     radial-gradient(
