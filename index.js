@@ -1,6 +1,9 @@
-/****** VARIABLES ******/
+
+/****** MODULES ******/
 
 import { quotes } from '/data.js';
+
+/****** VARIABLES ******/
 
 const chestPlate = document.getElementById("chest-plate");
 
@@ -9,8 +12,17 @@ const mediaText = document.getElementById("media-text");
 
 /****** RED SWITCH ******/
 
-const switchTopRed = document.getElementById("switch-top-red")
-const switchBotRed = document.getElementById("switch-bottom-red")
+const switchTopRed = document.getElementById("switch-top-red");
+const switchBotRed = document.getElementById("switch-bottom-red");
+
+/****** GRAY SWITCHES *******/
+
+const switchTopGray = document.getElementsByClassName("switch-top-gray");
+const switchBotGray = document.getElementsByClassName("switch-bottom-gray");
+//! Creates array-like structure
+//! Loops are required for .classlist and event listeners
+//? https://stackoverflow.com/questions/32852752/js-class-toggle-not-working-with-getelementsbyclassname
+//? https://stackoverflow.com/questions/19655189/javascript-click-event-listener-on-class
 
 
 /****** FUNCTIONS ******/
@@ -37,8 +49,8 @@ function targetButtons(e) {
 
 
 function redSwitchOnOff() {
-    switchTopRed.classList.toggle('red-switch-on-top')
-    switchBotRed.classList.toggle('red-switch-on-bottom')
+    switchTopRed.classList.toggle('red-switch-on-top');
+    switchBotRed.classList.toggle('red-switch-on-bottom');
 }
 
 
