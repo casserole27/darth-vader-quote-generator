@@ -45,12 +45,28 @@ function targetButtons(e) {
     if(e.target.tagName === 'BUTTON') {
         showQuote();
     };
+
+    const graySwitchTarget = e.target.dataset.switch
+
+    if(graySwitchTarget) {
+        graySwitchOnOff()
+    }
 };
 
 
 function redSwitchOnOff() {
     switchTopRed.classList.toggle('red-switch-on-top');
     switchBotRed.classList.toggle('red-switch-on-bottom');
+}
+
+function graySwitchOnOff() {
+    Array.from(switchTopGray).forEach(function(grayTop) {
+        grayTop.classList.toggle('gray-switch-on-top');
+    })
+    Array.from(switchBotGray).forEach(function(grayBottom) {
+        grayBottom.classList.toggle('gray-switch-on-bottom');
+    })
+
 }
 
 
