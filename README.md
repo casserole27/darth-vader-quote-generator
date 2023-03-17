@@ -95,6 +95,21 @@ Check markup and accessibility
 
 [CSS outline property](https://www.w3schools.com/css/css_outline.asp)
 
+Scrimba M5
+
+```javascript
+function highlightCheckedOption(e){
+
+    const radios = document.getElementsByClassName('radio')
+    //! removes styling
+    for (let radio of radios){
+        radio.classList.remove('highlight')
+    }
+    //! adds styling
+    document.getElementById(e.target.id).parentElement.classList.add('highlight')
+}
+```
+
 ## Author
 
 - Website - [C Lewis](https://www.clewisdev.com)

@@ -206,7 +206,7 @@ button {
 
 }
 
-.switch {
+.switch, .switch-red {
     height: 225px;
     display: flex;
     flex-direction: column;
