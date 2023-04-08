@@ -10,6 +10,8 @@ const chestPlate = document.getElementById("chest-plate");
 const quoteText = document.getElementById("quote-text");
 const mediaText = document.getElementById("media-text");
 
+const switches = document.getElementById("switches");
+
 
 /****** RED SWITCH ******/
 
@@ -88,6 +90,18 @@ switchBotGrayTwo.addEventListener("click", graySwitchTwoOnOff);
 switchTopGrayThree.addEventListener("click", graySwitchThreeOnOff);
 switchBotGrayThree.addEventListener("click", graySwitchThreeOnOff);
 
+// switches.addEventListener("click", function(e) {
+//     // console.log(e.target);
+
+//     const graySwitches = document.querySelectorAll(".switch-top-gray");
+//     console.log(graySwitches.classList);
+    
+//     graySwitches.forEach(function(graySwitch) {
+//         graySwitches.classList.toggle(".gray-switch-on-top")
+//     })
+
+//     e.target.classList.toggle("gray-switch-on-bottom")
+// })
 
 
 
