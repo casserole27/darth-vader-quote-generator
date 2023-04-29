@@ -95,6 +95,8 @@ Check markup and accessibility
 
 [CSS outline property](https://www.w3schools.com/css/css_outline.asp)
 
+[Border image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
+
 Scrimba M5
 
 ```javascript
