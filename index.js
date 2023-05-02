@@ -27,43 +27,47 @@ const switchBotGrayThree = document.getElementById("gray-bottom-three");
 
 /****** FUNCTIONS ******/
 
-function showQuote () {
+const showQuote = () => {
+    const randomQuotes = quotes.map((quote) => {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        return {
+            quote: quotes[randomIndex].quote,
+            media: quotes[randomIndex].media
+        };
+    });
 
-    let text = quotes;
+    quoteText.innerText = randomQuotes[0].quote;
+    mediaText.innerText = randomQuotes[0].media;
 
-    for (let i = 0; i < quotes.length; i++) {
-        let randomQuote = Math.floor(Math.random() * text.length);
-
-        quoteText.innerText = text[randomQuote].quote;
-        mediaText.innerText = text[randomQuote].media;
-    };
- 
+    const randomMedia = randomQuotes[0].media;
+    if (randomMedia === "Star Wars Episode V : The Empire Strikes Back") {
+        console.log("blue")
+    }
 };
 
-function targetButtons(e) {
-    
-    if(e.target.tagName === 'BUTTON') {
+const targetButtons = e => {
+    if (e.target.tagName === 'BUTTON') {
         showQuote();
     };
 };
 
 
-function redSwitchOnOff() {
+const redSwitchOnOff = () => {
     switchTopRed.classList.toggle("red-switch-on-top");
     switchBotRed.classList.toggle("red-switch-on-bottom");
 };
 
-function graySwitchOneOnOff() {
+const graySwitchOneOnOff = () => {
     switchTopGrayOne.classList.toggle("gray-switch-on-top");
     switchBotGrayOne.classList.toggle("gray-switch-on-bottom");
 };
 
-function graySwitchTwoOnOff() {
+const graySwitchTwoOnOff = () => {
     switchTopGrayTwo.classList.toggle("gray-switch-on-top");
     switchBotGrayTwo.classList.toggle("gray-switch-on-bottom");
 };
 
-function graySwitchThreeOnOff() {
+const graySwitchThreeOnOff = () => {
     switchTopGrayThree.classList.toggle("gray-switch-on-top");
     switchBotGrayThree.classList.toggle("gray-switch-on-bottom");
 };
