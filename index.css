@@ -76,6 +76,7 @@ body {
 }
 
 button {
+    cursor: pointer;
     border: none;
     border: .25px solid var(--black);
 }
@@ -263,6 +264,8 @@ button {
         radial-gradient(
         rgb(252, 163, 163), 
         red);
+        box-shadow: 0 0 5px 5px red;
+        outline: none;
 }
 
 .highlight-red {
@@ -341,6 +344,9 @@ button {
         radial-gradient(
         rgb(255, 255, 255), 
         rgb(161, 161, 161) 70%);
+    box-shadow: 0 0 5px 5px silver;
+    outline: none;
+
 }
 
 .highlight-gray {
