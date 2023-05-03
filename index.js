@@ -38,11 +38,6 @@ const showQuote = () => {
 
     quoteText.innerText = randomQuotes[0].quote;
     mediaText.innerText = randomQuotes[0].media;
-
-    const randomMedia = randomQuotes[0].media;
-    if (randomMedia === "Star Wars Episode V : The Empire Strikes Back") {
-        console.log("blue")
-    }
 };
 
 const targetButtons = e => {
