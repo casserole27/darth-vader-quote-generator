@@ -1,7 +1,7 @@
 
 /****** MODULES ******/
 
-import { quotes } from './data';
+import quotes from './data';
 
 /****** VARIABLES ******/
 
